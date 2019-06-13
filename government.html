@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>政府部门</title>
+	<meta name="keywords" content="西咸新区沣东金融综合服务平台">
+	<meta name="description" content="西咸新区沣东金融综合服务平台">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/financiallnstitution.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+	
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row clearfix">
+      <!-- <div class="col-md-12 column"> -->
+        <div id="myTab" class="col-md-2">
+          <img style="width:100%;height:100%" src="images/h1.png">
+          <ul class="nav nav-list accordion-group nav-pills nav-stacked">
+              <li class="active" >
+                  <a href="#project" data-toggle="tab">
+                      <span class="glyphicon glyphicon-play"></span>
+                      政策发布
+                  </a>
+              </li>
+              <li><a id="ENameReq" href="#creditRating" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>企业信用等级发布</a></li>
+              <!-- <li><a  href="#enterpriseNeed" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>金融机构信息发布</a></li> -->
+              <li><a href="#ejb" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>新闻发布</a></li>
+          </ul>
+        </div>
+        <!------------------------------------- 政策发布-------------------------------------- -->
+        <div id="myTabContent" class="tab-content col-md-10" >
+            <div class="tab-pane fade in active" id="project">
+                <div style="position: relative;height: 50px;padding-top: 10px;">
+                    <div class="enterpriseNeed-head" style=" width: 140px;float: left;">
+                        <a href="go-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;政策发布
+                    </div>
+                    <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                </div> 
+                <!-- <div class="enterpriseNeed-head" style="margin: 15px 0; width: 140px;">
+                        <span style="font-weight: bold;">首页</span>&nbsp;&nbsp;>&nbsp;&nbsp;政策发布
+                </div> -->
+                <form class="form-horizontal" role="form" style="padding-top: 20px;border-top: 2px solid #85141a;">
+                    <div class="form-group" style="margin-left:15%">
+                        <label class=" control-label tit">政策名称：</label>
+                        <div >
+                            <!-- <input type="text" class="form-control default-input" id="fkBankId" placeholder="" style="width:280px"/> -->
+                            <textarea class="form-control" rows="1" id="newdescription" style="width:600px"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-left:15%">
+                        <label class=" control-label tit">政策说明：</label>
+                        <div class="">
+                            <textarea class="form-control" rows="5" id="policedescription" style="width:600px"></textarea>
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>银行行号：</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control default-input" id="fkBankId" placeholder="" style="width:280px"/>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>通用产品：</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="general_product" data-live-search="true" style="width:280px">
+                                
+                                <option>0-非通用产品</option>
+                                <option>1-通用产品</option>
+                            </select>									
+                        </div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                    <div class="btn-group">
+                      <button type="reset" class="btn btn-default">重置</button>
+                      <button type="button" class="btn btn-default release1" >发布</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- ---------------------企业信用等级发布--------------------------- -->
+            <div class="tab-pane fade" id="creditRating">
+                <div style="position: relative;height: 30px;padding-top: 10px;">
+                    <div class="enterpriseNeed-head" style=" width: 200px;float: left;">
+                        <a href="go-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;企业信用等级发布
+                    </div>
+                    <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                </div>
+                <!-- <div class="enterpriseNeed-head" style="margin: 15px 0; width: 200px;">
+                    <span style="font-weight: bold;">首页</span>&nbsp;&nbsp;>&nbsp;&nbsp;企业信用等级发布
+                </div> -->
+                <div class="enterpriseNeed-table">
+                        <table class="table">
+                            <!-- <caption>基本的表格布局</caption> -->
+                            <thead>
+                                <tr>
+                                <th>企业名称</th>
+                                <th>信用等级</th>
+                                <th></th>
+                                
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                
+                            </tbody>
+                            
+                            <!-- <tbody>                      
+                                <tr>
+                                <td>Tanmay</td>
+                                <td>Bangalore</td>
+                                </tr>
+                                <tr>
+                                <td>Sachin</td>
+                                <td>Mumbai</td>
+                                </tr>
+                            </tbody> -->
+                        </table>
+                        <!-- <div id="deResult" style="text-align: center;">无记录</div>  -->
+                    </div>
+
+
+
+               
+            </div>
+
+            
+            
+
+            <!----------------------------------- 金融机构信息发布----------------------------------- -->
+            <!-- <div class="tab-pane fade" id="enterpriseNeed">
+                <div class="enterpriseNeed-head" style="margin: 15px 0; width: 200px;">
+                    <span style="font-weight: bold;">首页</span>&nbsp;&nbsp;>&nbsp;&nbsp;金融机构信息发布
+                </div>
+               
+                
+                
+            </div> -->
+            <!----------------------------------- 新闻发布----------------------------------- -->
+            <div class="tab-pane fade" id="ejb">
+                <div style="position: relative;height: 50px;padding-top: 10px;">
+                    <div class="enterpriseNeed-head" style=" width: 200px;float: left;">
+                        <a href="go-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;新闻发布
+                    </div>
+                    <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                </div>
+                <!-- <div class="enterpriseNeed-head" style="margin: 15px 0; width: 140px;">
+                    <span style="font-weight: bold;">首页</span>&nbsp;&nbsp;>&nbsp;&nbsp;新闻发布
+                </div> -->
+                
+                <form class="form-horizontal" role="form" style="padding-top: 20px;border-top: 2px solid #85141a;">
+                    <div class="form-group" style="margin-left:15%">
+                        <label class=" control-label tit">新闻名称：</label>
+                        <div >
+                            <!-- <input type="text" class="form-control default-input" id="fkBankId" placeholder="" style="width:280px"/> -->
+                            <textarea class="form-control" rows="1" id="newdescription" style="width:600px"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-left:15%">
+                        <label class=" control-label tit">新闻描述：</label>
+                        <div >
+                            <textarea class="form-control" rows="5" id="newdescription" style="width:600px"></textarea>
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>银行行号：</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control default-input" id="fkBankId" placeholder="" style="width:280px"/>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>通用产品：</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="general_product" data-live-search="true" style="width:280px">
+                                
+                                <option>0-非通用产品</option>
+                                <option>1-通用产品</option>
+                            </select>									
+                        </div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                    <div class="btn-group">
+                      <button type="reset" class="btn btn-default" >重置</button>
+                      <button type="button" class="btn btn-default release2" >发布</button>
+                    </div>
+                </form>
+               
+                
+                
+            </div>
+            
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="js/government.js"></script>
+</body>
+
+</html>

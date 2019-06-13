@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>金融机构</title>
+	<meta name="keywords" content=",西咸新区沣东金融综合服务平台">
+	<meta name="description" content="西咸新区沣东金融综合服务平台">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/financiallnstitution.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+	
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row clearfix">
+      <!-- <div class="col-md-12 column"> -->
+        <div id="myTab" class="col-md-2">
+          <img style="width:100%;height:100%" src="images/h1.png">
+          <ul class="nav nav-list accordion-group nav-pills nav-stacked">
+              <li class="active" >
+                  <a href="#project" data-toggle="tab">
+                      <span class="glyphicon glyphicon-play"></span>
+                      产品发布
+                  </a>
+              </li>
+              <li><a id="productApply" href="#enterpriseAppli" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>企业申请</a></li>
+              <li><a  href="#enterpriseNeed" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>企业需求</a></li>
+              <!-- <li><a href="#ejb" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>信息管理</a></li> -->
+          </ul>
+        </div>
+        <!------------------------------------- 产品发布-------------------------------------- -->
+        <div id="myTabContent" class="tab-content col-md-10" >
+            <div class="tab-pane fade in active" id="project">
+                <div style="position: relative;height: 50px;padding-top: 10px;">
+                    <div class="enterpriseNeed-head" style=" width: 140px;float: left;">
+                        <a href="fi-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;产品发布
+                        
+                    </div>
+                    <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                </div>
+                <!-- <hr style="height:2px;border-top:2px solid #85141a;"> -->
+                <form class="form-horizontal" role="form" style="  padding-top: 50px;border-top:2px solid #85141a;">
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit">银行名称：</label>
+                        <div class="col-sm-9">
+                            <p class="form-control-static " id="bankName"></p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit">银行行号：</label>
+                        <div class="col-sm-9">
+                            <p class="form-control-static " id="bankNum"></p>
+                            <!-- <input type="text" class="form-control default-input" id="fkBankId" placeholder="" style="width:280px"/> -->
+                        </div>
+                    </div>
+                                      
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>金融产品名称：</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control default-input" id="ProductName" placeholder="" style="width:280px"/>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>机构类型：</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="organizationType" data-live-search="true" style="width:280px"> 
+                                <option value="0">0-银行</option>
+                                <option value="1">1-担保公司</option>
+                                <option value="2">2-保险公司</option>
+                                <option value="3">3-交易所</option>
+                                <option value="4">4-金融租赁</option>
+                                <option value="5">5-转贷公司</option>
+                                <option value="6">6-服务公司</option>
+                            </select>									
+                        </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>利率范围：</label>
+                        <div class="col-sm-9 form-inline">
+                            <input type="text" name="" class="form-control" id="rateLowerLimit" style="width:100px;">
+                            %至
+                            <input type="text" name="" class="form-control" id="rateUpperLimit" style="width:100px";>&nbsp;&nbsp;%
+                            <!-- <input type="text" class="default-input" id="rate_down" placeholder="请输入利率下限" maxlength="300"/>&nbsp;&nbsp;&nbsp;&nbsp;% -->
+                        </div>
+                    </div>
+                  
+                    <!-- <div class="form-group">
+                        <label for="rate_up" class="col-sm-3 control-label tit"><span>*</span>利率上限：</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="default-input" id="rate_up" placeholder="请输入利率上限" maxlength="300"/>&nbsp;&nbsp;&nbsp;&nbsp;%
+                        </div>
+                    </div>
+                    <hr style="margin-top: 3px;"> -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>通用产品：</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="general_product" data-live-search="true" style="width:280px">
+                                
+                                <option value="0">0-非通用产品</option>
+                                <option value="1">1-通用产品</option>
+                            </select>									
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>网贷直联 ：</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="internetLoanType" data-live-search="true" style="width:280px">
+                                
+                                <option value="0">0-非网贷直联</option>
+                                <option value="1">1-网贷直联</option>
+                            </select>									
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>政策性产品 ：</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="policy_product" data-live-search="true" style="width:280px">
+                                
+                                <option value="0">0-非政策性产品</option>
+                                <option value="1">1-政策性产品</option>
+                            </select>									
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>支付方式 ：</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="pay" data-live-search="true" style="width:280px">
+                                
+                                <option value="0">0-非人民币</option>
+                                <option value="1">1-人民币</option>
+                            </select>									
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>贷款类别 ：</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="loan_category" data-live-search="true" style="width:280px">
+                                
+                                <option value="0">0-经营贷款</option>
+                                <option value="1">1-流动资金贷款</option>
+                                <option value="2">2-周转贷款</option>
+                            </select>									
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>贷款额度（单位：万元）</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="loan_limit" data-live-search="true" style="width:280px">
+                            
+                                <option value="0">0-100万及以下</option>
+                                <option value="1">1-200万及以下</option>
+                                <option value="2">2-300万及以下</option>
+                                <option value="3">3-500万及以下</option>
+                                <option value="4">4-1000万及以下</option>
+                                <option value="5">5-1000万以上</option>
+                            </select>									
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>贷款期限（月）：</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control default-input" id="loan_period" placeholder=""style="width:280px"/>
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit"><span>*</span>担保方式:</label>
+                        <div class="col-sm-9">
+                            <select class="col-sm-9 selectpicker show-tick form-control" id="guarantee_mode" data-live-search="true" style="width:280px">
+                                
+                                <option value="0">0-抵押</option>
+                                <option value="1">1-信保基金</option>
+                                <option value="2">2-一般保证</option>
+                                <option value="3">3-信用</option>
+                                <option value="4">4-实际控制人夫妇提供个人连带担保</option>
+                            </select>									
+                        </div>
+                    </div>
+                 
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit">使用区域：</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control default-input" id="use_area" style="width:280px"/>
+                        </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label tit">说明：</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="3" id="description" style="width:300px"></textarea>
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <div class="col-sm-offset-5 col-sm-7">
+                            <a class="btn " id="release">提交注册</a>
+                        </div>
+                    </div> -->
+                    <div class="btn-group">
+                      <button type="reset" class="btn btn-default" id="clearForm">重置</button>
+                      <button type="button" id="release" class="btn btn-default" >发布</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- ---------------------企业申请--------------------------- -->
+            <div class="tab-pane fade" id="enterpriseAppli">
+                <div class="enterpriseApp">
+                    <div style="position: relative;height: 50px;padding-top: 10px;">
+                        <div class="enterpriseNeed-head" style=" width: 140px;float: left;">
+                            <a href="fi-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;企业申请
+                        </div>
+                        <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                    </div>               
+                  
+                    <div class="products-tag" style="padding-top: 20px;border-top: 2px solid #85141a">
+                        <table class="table-default">
+                            <tbody class="tbody-default">
+                                <tr>
+                                <th>金融产品名称:</th>
+                                <td id="productNameSelect"> 
+                                    <a class="btn-muted current productUnlimited" href="javascript:;">不限</a>
+                                    
+                                    
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="doing"></div> 
+                    <div class="card"> 
+                        
+                        <div class="card-body card-body-padding">
+                        <div class="products-list"> 
+                            <!-- <dl class="products-item">
+                            <dt>
+                                <a class="products-image_link" href="#"><img src="images/bank1.png"></a>
+                            </dt>
+                            <dd>
+                                <div class="products-title">
+                                <a class="products-title_link" href="#">据云科技</a>
+                                </div>
+                                <div class="products-info">
+                                <div class="products-type">
+                                    <span class="products-type_item"> <i class="icon icon-type1"> </i>
+                                    <span>统一社会信用代码：</span><em>29880473578461scf</em></span>
+                                    <span class="products-type_item"><span>金融产品名称：</span><em>微e贷</em></span>
+                                    <span class="products-type_item"> <span>申请时间：</span><em>2018-11-11</em></span>
+                                    <span class="products-type_item"> <i class="icon icon-type4"> </i><span>贷款期限：</span><em>1个月 -36个月</em></span>
+                                    </div>
+                                    <div class="products-action"> 
+                                    <p class="btn-wrap">
+                                        <a class="products-btn" href="companyDetail.html">详情</a>
+                                        <a class="products-btn products-btn--red" href="#">申请 </a>
+                                    </p>
+                                    <p class="proecuts-success">
+                                        <span class="desc">成功率</span>
+                                        <span class="score-bar">
+                                        <span class="score" style="width: 100%;"></span>
+                                        </span>
+                                    </p>
+                                    <p class="products_desc"> 对接成功<em>881</em>项需求 </p>
+                                    </div>
+                                </div>
+                                </dd>
+                            </dl>
+                            <dl class="products-item">
+                                <dt>
+                                <a class="products-image_link" href="#"><img src="images/bank2.png"></a>
+                                </dt>
+                                <dd>
+                                <div class="products-title">
+                                    <a class="products-title_link" href="#">腾讯</a>
+                                </div>
+                                <div class="products-info">
+                                    <div class="products-type">
+                                    <span class="products-type_item"> <i class="icon icon-type1"> </i><span>统一社会信用代码：</span><em>121</em></span>
+                                    <span class="products-type_item"> <i class="icon icon-type2"> </i><span>金融产品名称：</span><em>游戏贷</em></span>
+                                    <span class="products-type_item"> <i class="icon icon-type3"> </i><span>申请时间：</span><em>2019-1-1</em></span>
+                                    <span class="products-type_item"> <i class="icon icon-type4"> </i><span>贷款期限：</span><em>1个月 -36个月</em></span>
+                                    </div>
+                                    <div class="products-action"> 
+                                    <p class="btn-wrap">
+                                        <a class="products-btn" href="#">详情</a>
+                                        <a class="products-btn products-btn--red" href="#">申请 </a>
+                                    </p>
+                                    <p class="proecuts-success">
+                                        <span class="desc">成功率</span>
+                                        <span class="score-bar">
+                                        <span class="score" style="width: 50%;"></span>
+                                        </span>
+                                    </p>
+                                    <p class="products_desc"> 对接成功<em>881</em>项需求 </p>
+                                    </div>
+                                </div>
+                                </dd>
+                            </dl> -->
+                            
+                            </div>
+                            <div class="paginator">
+                            <a class="page-prev" href="">上一页</a>
+                            <a class="page-no current" href="">1</a>
+                            <!-- <a class="page-no" href="">2</a>
+                            <a class="page-no" href="">3</a>
+                            <a class="page-no" href="">4</a>
+                            <a class="page-no" href="">5</a> -->
+                            <a class="page-next" href="">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- ---------------------------企业详情------------------------------------ -->
+                <div id="companyDetail" style="display: none">
+                    <div class="container">
+                        <!-- <div class="breadcrumb enterpriseNeed-head" style="width: 160px">企业申请 &gt;&gt;企业详情</div> -->
+                        <div class="breadcrumb" style="margin-top: 10px">企业申请 &gt;&gt;企业详情</div>
+                        <div class="detail-wrap">
+                            <!-- <div class="detail-company">
+                                <img class="detail-company_img" src="images/company1.jpg">
+                                <div class="detail-company_info">
+                                    <p> <b>企业简介：</b>抵押快贷是建设银行为小微企业量身打造的快速抵押贷款产品，完美匹配小微企业“短、小、频、急”融资需求。</p>
+                                    <p> <b>适用客户：</b>持有符合建设银行要求抵押房产的小微企业及个体工商户。</p>
+                                </div>
+                            </div> -->
+                            <div class="detail-info" style="float: left;width:95%;">
+                                <div class="card card--detail">
+                                    <div class="card-header">
+                                        <dl class="detail-bank"> 
+                                            <dt> <img class="detail-bank_img" src="images/bank3.png"></dt>
+                                            <dd> 
+                                                <h2 id="enterpriseName"></h2>
+                                                <p id="socialCode">  </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="card-body card-body--padding"> 
+                                        <table class="table-detal">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-th">法人姓名：</td>
+                                                    <td ><em id="ownerName"></em></td>
+                                                </tr>
+                                                <tr>   
+                                                    <td class="table-th">所属区域：	</td>
+                                                    <td ><em id="region"></em></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-th">街道/乡镇：</td>
+                                                    <td ><em id="street"> </em></td>
+                                                </tr>
+                                                <tr>   
+                                                    <td class="table-th">法人手机号：</td>
+                                                    <td ><em id="ownerPhone"></em></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-th">联系人姓名：</td>
+                                                    <td ><em id="contactName"></em></td>
+                                                </tr>
+                                                <tr>   
+                                                    <td class="table-th">联系人手机号：</td>
+                                                    <td ><em id="contactPhone"> </em></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-th">经营范围：</td>
+                                                    <td ><em id="businessScop"></em></td>
+                                                </tr>
+                                               
+                                            </tbody>
+                                        </table>
+                                        <div class="detail-price"> 
+                                            <!-- <span class="detail-price_desc"> 企业申请融资金额：<em>199,255</em>万元</span> -->
+                                            <a class="return_btn" href="#">返回  </a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <!-- <button type="button" class="return btn btn-default" >返回</button> -->
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            
+            
+
+            <!----------------------------------- 企业需求----------------------------------- -->
+            <div class="tab-pane fade" id="enterpriseNeed">
+                <div style="position: relative;height: 50px;padding-top: 10px;">
+                    <div class="enterpriseNeed-head" style=" width: 140px;float: left;">
+                        <a href="fi-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;企业需求
+                    </div>
+                    <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                </div> 
+                <div class="enterpriseNeed-body" > 
+                    <div class="enterpriseNeed-form">
+                        <form class="form-horizontal form2" role="form" >
+                            <div class="form-inline form-group" >
+                                <div class="col-sm-5" >
+                                    <label for="ProductName" class="col-sm-6 control-label tit"><span>*</span>利率下限（%）：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control default-input" id="rate_lower_limmit" placeholder="" style="width: 180px"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <label class="col-sm-6 control-label tit"><span>*</span>利率上限（%）:</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control default-input" id="rate_upper_limmit" placeholder="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-inline form-group">
+                                <div class="col-sm-5">
+                                    <label for="ProductName" class="col-sm-6 control-label tit">贷款额度：</label>
+                                    <div class="col-sm-4">
+                                    
+                                        <select class=" selectpicker show-tick form-control" id="loanLimit" data-live-search="true" style="width: 180px" >
+                                            <option value="">不限</option>
+                                            <option value="0">0-100万及以下</option>
+                                            <option value="1">1-200万及以下</option>
+                                            <option value="2">2-300万及以下</option>
+                                            <option value="3">3-500万及以下</option>
+                                            <option value="4">4-1000万及以下</option>
+                                            <option value="5">5-1000万以上</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5" >
+                                    <label for="ProductName" class="col-sm-6 control-label tit">担保方式：</label>
+                                    <div class="col-sm-4">
+                                        
+                                        <select class=" selectpicker show-tick form-control" id="danbao" data-live-search="true" style="width: 200px"/>
+                                            <option value="">不限</option>
+                                            <option value="0">0-抵押</option>
+                                            <option value="1">1-信保基金</option>
+                                            <option value="2">2-一般保证</option>
+                                            <option value="3">3-信用</option>
+                                            <option value="4">4-实际控制人夫妇提供个人连带担保</option>                             
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="form-inline form-group" >
+                                    <div class="col-sm-5">
+                                        <label class="col-sm-6 control-label tit">贷款期限（月）：</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control default-input" id="loanTime" placeholder="" style="width: 180px"/>
+                                        </div>
+                                    </div>                                
+                                
+                            </div>
+                            <div >
+                                <button id="demandCheck" type="button" class="btn btn-default" >查询</button>
+                            </div>
+                            
+                        </form>
+                        
+                    </div>
+                    <div class="enterpriseNeed-table">
+                        <table class="table">
+                            <!-- <caption>基本的表格布局</caption> -->
+                            <thead>
+                                <tr>
+                                <th>统一社会信用代码</th>
+                                <th>企业名称</th>
+                                <th>贷款额度</th>
+                                <th>利率下限</th>
+                                <th>利率上限</th>
+                                <th>贷款期限（月）</th>
+                                <th>担保方式</th>
+                                <th>融资用途</th>
+                                <th>项目情况</th>
+                                <th>备注</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                
+                            </tbody>
+                            
+                            <!-- <tbody>                      
+                                <tr>
+                                <td>Tanmay</td>
+                                <td>Bangalore</td>
+                                </tr>
+                                <tr>
+                                <td>Sachin</td>
+                                <td>Mumbai</td>
+                                </tr>
+                            </tbody> -->
+                        </table>
+                        <div id="deResult" style="text-align: center;">无记录</div> 
+                    </div>
+                    
+    
+                      
+                </div>
+                
+                
+            </div>
+            
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="js/financiallnstitution.js"></script>
+</body>
+
+</html>

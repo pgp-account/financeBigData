@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>西咸新区沣东金融综合服务平台</title>
+		<meta name="keywords" content="西咸新区沣东金融综合服务平台">
+		<meta name="description" content="西咸新区沣东金融综合服务平台">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/page.css">
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="container"><a class="logo" href="#"><img src="images/logo.png"></a>
+				<div class="login">
+					<a class="login-company" href="#" id="company"> </a>
+					<a class="login-organization" href="#" id="organization"></a>
+					<a class="login-government" href="#" id="government"></a>
+				</div>
+			</div>
+		</div>
+		<div class="login-container" id="login-company">
+			<div class="login-head">企业登录</div>
+			<form>
+				用户名：<input placeholder="用户名" type="text" name="usename" id="username" /><br>
+				密码&nbsp;&nbsp;&nbsp;：<input type="password" placeholder="密码" name="password" style="margin-left: 3px;" id="password" /><br>
+		    	<button type="button" class="login-submit" id="login-submit">登录</button><br>
+		    	<a href="co-register.html" style="color:#0487FF">立即注册</a>
+		    	<!-- <a href="" style="margin-left: 140px;color: #0487FF;">修改密码</a> -->
+			</form>
+		</div>
+		<div class="login-container" id="login-organization">
+			<div class="login-head">金融登录</div>
+			<form>
+				
+				用户名：<input placeholder="用户名" type="text" name="usename" id="fiusername" /><br>
+				密码&nbsp;&nbsp;&nbsp;：<input type="password" placeholder="密码" name="password" style="margin-left: 3px;" id="fipassword" /><br>
+				<button type="button" class="login-submit" id="filogin-submit">登录</button><br>
+				<a href="fi-register.html" style="color:#0487FF">立即注册</a>
+				<!-- <a href="" style="margin-left: 140px;color: #0487FF;">修改密码</a> -->
+			</form>
+		</div>
+		<div class="login-container" id="login-government">
+			<div class="login-head">政府登录</div>
+			<form>
+				用户名：<input placeholder="用户名" type="text" name="usename" id="gousername" /><br>
+				密码&nbsp;&nbsp;&nbsp;：<input type="password" placeholder="密码" name="password" style="margin-left: 3px;" id="gopassword" /><br>
+		    	<button type="button" class="login-submit" id="gologin-submit">登录</button><br>
+		    	<a href="go-register.html" style="color:#0487FF">立即注册</a>
+		    	<!-- <a href="" style="margin-left: 140px;color: #0487FF;">修改密码</a> -->
+			</form>
+		</div>
+		<div class="nav">
+			<div class="container">
+				<ul class="nav-list">
+					<li class="nav_item"><a class="nav_link" href="index.html">首页</a></li>
+					<li class="nav_item"><a class="nav_link" href="news.html">新闻中心</a></li>
+					<li class="nav_item"><a class="nav_link" href="products.html" style="background-color: rgb(41, 128, 209);">金融产品</a></li>
+					<li class="nav_item"><a class="nav_link" href="institution.html">金融机构</a></li>
+					<li class="nav_item"><a class="nav_link" href="case.html">融资案例</a></li>
+					<li class="nav_item"><a class="nav_link" href="enterprise.html">企业库</a></li>
+					<li class="nav_item"><a class="nav_link" href="about.html">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="swiper-container swiper-hero">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background: url(images/banner.jpg) no-repeat top center;">
+					<a class="swiper-hero_link" href="#" target="_blank"></a>
+				</div>
+				<div class="swiper-slide" style="background: url(images/banner1.jpg) no-repeat top center;">
+					<a class="swiper-hero_link" href="#" target="_blank"></a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+		<!--
+		<div class="service">
+			<div class="container service_list">
+				<a class="service_link" href="#"> <i class="icon service_icon1"></i><span>我要贷款</span></a>
+				<a class="service_link" href="#"> <i class="icon service_icon2"></i><span>我要保险</span></a>
+				<a class="service_link" href="#"> <i class="icon service_icon3"></i><span>我要担保</span></a>
+				<a class="service_link" href="#"> <i class="icon service_icon4"></i><span>我要理财</span></a>
+				<a class="service_link" href="#"> <i class="icon service_icon5"></i><span>产品展示</span></a>
+				<a class="service_link" href="#"> <i class="icon service_icon6"></i><span>我要转贷</span></a>
+				<a class="service_link" href="#"> <i class="icon service_icon7"></i><span>我要租赁</span></a>
+				<a class="service_link" href="#"> <i class="icon service_icon8"></i><span>我要服务</span></a>
+			</div>
+		</div>
+	-->
+		<div class="main">
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="#">首页 </a>&gt;&gt;金融产品
+				</div>
+				<!-- <div class="products-tag"> 
+					<table class="table-default">
+						<tbody class="tbody-default">
+							<tr>
+								<th>机构类型</th>
+								<td> 
+									<a class="btn-muted current" href="javascript:;">不限</a>
+									<a class="btn-muted" href="javascript:;">银行</a>
+									<a class="btn-muted" href="javascript:;">担保公司</a>
+									<a class="btn-muted" href="javascript:;">保险公司</a>
+									<a class="btn-muted" href="javascript:;">交易所</a>
+									<a class="btn-muted" href="javascript:;">金融租赁</a>
+									<a class="btn-muted" href="javascript:;">转贷公司</a>
+									<a class="btn-muted" href="javascript:;">服务公司</a>
+								</td>
+							</tr>
+							<tr>
+								<th>贷款期限</th>
+								<td> 
+									<a class="btn-muted current" href="javascript:;">不限</a>
+									<a class="btn-muted" href="javascript:;">3个月及以下</a>
+									<a class="btn-muted" href="javascript:;">6个月及以下</a>
+									<a class="btn-muted" href="javascript:;">12个月及以下</a>
+									<a class="btn-muted" href="javascript:;">36个月及以下</a>
+									<a class="btn-muted" href="javascript:;">36个月以上</a>
+								</td>
+							</tr>
+							<tr>
+								<th>担保方式</th>
+								<td> 
+									<a class="btn-muted current" href="javascript:;">不限</a>
+									<a class="btn-muted" href="javascript:;">抵押质押</a>
+									<a class="btn-muted" href="javascript:;">信保基金</a>
+									<a class="btn-muted" href="javascript:;">一般保证信用</a>
+									<a class="btn-muted" href="javascript:;">实际控制人夫妇提供个人连带担保</a>
+								</td>
+							</tr>
+							<tr>
+								<th>网贷直联</th>
+								<td> 
+									<a class="btn-muted current" href="javascript:;">不限</a>
+									<a class="btn-muted" href="javascript:;">是</a>
+									<a class="btn-muted" href="javascript:;">否</a>
+								</td>
+							</tr>
+							<tr>
+								<th>政策性产品</th>
+								<td> 
+									<a class="btn-muted current" href="javascript:;">不限</a>
+									<a class="btn-muted" href="javascript:;">是</a>
+									<a class="btn-muted" href="javascript:;">否</a>
+								</td>
+							</tr>
+							<tr>
+								<th>贷款额度</th>
+								<td> 
+									<a class="btn-muted current" href="javascript:;">不限</a>
+									<a class="btn-muted" href="javascript:;">100万及以下</a>
+									<a class="btn-muted" href="javascript:;">200万及以下</a>
+									<a class="btn-muted" href="javascript:;">300万及以下</a>
+									<a class="btn-muted" href="javascript:;">500万及以下</a>
+									<a class="btn-muted" href="javascript:;">1000万及以下</a>
+									<a class="btn-muted" href="javascript:;">1000万以上 </a>
+									<a class="btn-muted" href="javascript:;">其它金额</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> -->
+				<div class="card"> 
+					<!-- <div class="card-header">共找到<em>1</em>个结果</div> -->
+					<div class="card-body card-body--padding">
+						<div class="products-list"> 
+								
+								<dl class="products-item">
+									<dt>
+										<a class="products-image_link" href="#"><img src="images/bank3.png"></a>
+									</dt>
+									<dd>
+										<div class="products-title">
+											<a class="products-title_link" href="#">建设银行-抵押快贷</a>
+										</div>
+										<div class="products-info">
+											<div class="products-type">
+												<span class="products-type_item"> 
+													<i class="icon icon-type1"> </i><span>参考利率范围：</span><em>4.35%-5.66%</em>
+												</span>
+												<span class="products-type_item"> 
+													<i class="icon icon-type2"> </i><span>贷款额度：</span><em>1万元-1,000万元</em>
+												</span>
+												<span class="products-type_item"> 
+													<i class="icon icon-type3"> </i><span>担保方式：</span><em>抵押</em>
+												</span>
+												<span class="products-type_item"> 
+													<i class="icon icon-type4"> </i><span>贷款期限：</span><em>1个月 -36个月</em>
+												</span>
+											</div>
+											<div class="products-action"> 
+												<p class="btn-wrap">
+													<a class="products-btn" href="productsDetail.html">详情</a>
+													<a class="products-btn products-btn--red apply apply" href="#">申请 </a>
+												</p>
+												<p class="proecuts-success">
+													<span class="desc">成功率</span>
+													<span class="score-bar">
+														<span class="score" style="width: 0%;"></span>
+													</span>
+												</p>
+												<p class="products_desc"> 对接成功<em>881</em>项需求 </p>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<dl class="products-item">
+										<dt>
+											<a class="products-image_link" href="#"><img src="images/bank3.png"></a>
+										</dt>
+										<dd>
+											<div class="products-title">
+												<a class="products-title_link" href="#">建设银行-抵押快贷</a>
+											</div>
+											<div class="products-info">
+												<div class="products-type">
+													<span class="products-type_item"> 
+														<i class="icon icon-type1"> </i><span>参考利率范围：</span><em>4.35%-5.66%</em>
+													</span>
+													<span class="products-type_item"> 
+														<i class="icon icon-type2"> </i><span>贷款额度：</span><em>1万元-1,000万元</em>
+													</span>
+													<span class="products-type_item"> 
+														<i class="icon icon-type3"> </i><span>担保方式：</span><em>抵押</em>
+													</span>
+													<span class="products-type_item"> 
+														<i class="icon icon-type4"> </i><span>贷款期限：</span><em>1个月 -36个月</em>
+													</span>
+												</div>
+												<div class="products-action"> 
+													<p class="btn-wrap">
+														<a class="products-btn" href="productsDetail.html">详情</a>
+														<a class="products-btn products-btn--red apply apply" href="#">申请 </a>
+													</p>
+													<p class="proecuts-success">
+														<span class="desc">成功率</span>
+														<span class="score-bar">
+															<span class="score" style="width: 0%;"></span>
+														</span>
+													</p>
+													<p class="products_desc"> 对接成功<em>881</em>项需求 </p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="products-item">
+											<dt>
+												<a class="products-image_link" href="#"><img src="images/bank3.png"></a>
+											</dt>
+											<dd>
+												<div class="products-title">
+													<a class="products-title_link" href="#">建设银行-抵押快贷</a>
+												</div>
+												<div class="products-info">
+													<div class="products-type">
+														<span class="products-type_item"> 
+															<i class="icon icon-type1"> </i><span>参考利率范围：</span><em>4.35%-5.66%</em>
+														</span>
+														<span class="products-type_item"> 
+															<i class="icon icon-type2"> </i><span>贷款额度：</span><em>1万元-1,000万元</em>
+														</span>
+														<span class="products-type_item"> 
+															<i class="icon icon-type3"> </i><span>担保方式：</span><em>抵押</em>
+														</span>
+														<span class="products-type_item"> 
+															<i class="icon icon-type4"> </i><span>贷款期限：</span><em>1个月 -36个月</em>
+														</span>
+													</div>
+													<div class="products-action"> 
+														<p class="btn-wrap">
+															<a class="products-btn" href="productsDetail.html">详情</a>
+															<a class="products-btn products-btn--red apply apply" href="#">申请 </a>
+														</p>
+														<p class="proecuts-success">
+															<span class="desc">成功率</span>
+															<span class="score-bar">
+																<span class="score" style="width: 0%;"></span>
+															</span>
+														</p>
+														<p class="products_desc"> 对接成功<em>881</em>项需求 </p>
+													</div>
+												</div>
+											</dd>
+										</dl>
+										<dl class="products-item">
+											<dt>
+												<a class="products-image_link" href="#"><img src="images/bank3.png"></a>
+											</dt>
+											<dd>
+												<div class="products-title">
+													<a class="products-title_link" href="#">建设银行-抵押快贷</a>
+												</div>
+												<div class="products-info">
+													<div class="products-type">
+														<span class="products-type_item"> 
+															<i class="icon icon-type1"> </i><span>参考利率范围：</span><em>4.35%-5.66%</em>
+														</span>
+														<span class="products-type_item"> 
+															<i class="icon icon-type2"> </i><span>贷款额度：</span><em>1万元-1,000万元</em>
+														</span>
+														<span class="products-type_item"> 
+															<i class="icon icon-type3"> </i><span>担保方式：</span><em>抵押</em>
+														</span>
+														<span class="products-type_item"> 
+															<i class="icon icon-type4"> </i><span>贷款期限：</span><em>1个月 -36个月</em>
+														</span>
+													</div>
+													<div class="products-action"> 
+														<p class="btn-wrap">
+															<a class="products-btn" href="productsDetail.html">详情</a>
+															<a class="products-btn products-btn--red apply" href="#">申请 </a>
+														</p>
+														<p class="proecuts-success">
+															<span class="desc">成功率</span>
+															<span class="score-bar">
+																<span class="score" style="width: 0%;"></span>
+															</span>
+														</p>
+														<p class="products_desc"> 对接成功<em>881</em>项需求 </p>
+													</div>
+												</div>
+											</dd>
+										</dl>
+							</div>
+							<div class="paginator">
+								<a class="page-prev" href="">上一页</a>
+								<a class="page-no current" href="">1</a>
+								<a class="page-next" href="">下一页</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container"> 
+					<div class="copyright">
+						<p>西咸新区沣东新城管理委员会</p>
+						<p>地址：陕西省西咸新区沣东新城沣东大道1号沣东城市广场   邮政编码：710086</p>
+						<p>出版单位：西咸新区沣东新城管理委员会</p>
+						<p>技术支持：陕西炬云金融科技服务有限公司   联系方式：029-68929288</p>
+						<p>备案序号：陕610191266号  网站标识码：610190006  网站地图</p>
+					</div>
+					<div class="footer-links"> 
+						<a href="#"><img src="images/footer_link1.png"></a>
+						<a href="#"><img src="images/footer_link2.png"></a>
+						<a href="#"><img src="images/footer_link3.png"></a>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+			<script type="text/javascript" src="js/lib/swiper.min.js"></script>
+			<script type="text/javascript" src="js/common.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

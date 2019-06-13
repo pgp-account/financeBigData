@@ -1,0 +1,326 @@
+
+.form-group span{
+    color: red;
+}
+.btn{
+    background-color: #85141a;
+    color: #fff;
+    
+}
+.tab-pane{
+    margin-right: 5%;
+}
+
+
+
+.nav li a{
+	color: #064ec0;
+}
+.nav li a > span{
+	padding-right: 7px;
+    font-size: 13px;
+    color: #064ec0;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	color: #FFF;
+	background: #064ec0;
+}
+.btn-group{
+	margin-top: 5px;
+    margin-left: 28%;
+}
+.btn-group button{
+	width: 92px;
+    margin-right: 40px;
+    height: 30px;
+    
+    color: #fff;
+}
+
+
+
+
+/* --------------------企业申请--------------------------------- */
+.table-default{
+    margin-top: 10px;
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0;
+    line-height:1.8;
+    font-size:15px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.table-default td{
+    padding:3px 5px ;
+   
+}
+.table-default th{
+    width:140px;
+    background-color: #f6f6f6;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+} 
+.card-body{
+    padding: 15px;
+    border-top: 1px dashed #ccc;
+}
+
+.products-item{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+    zoom: 1;
+}
+.products-item dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.products-item dt {
+    float: left;
+    width: 130px;
+}
+/* .products-item a{
+	line-height:150px; 
+} */
+.products-item .products-image_link {
+    display: block;
+    width: 128px;
+    height: 46px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+.products-item:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.products-title_link{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 13px;
+    color: #004BBB; 
+}
+.products-item dd {
+    padding-left: 140px;
+}
+.products-item .products-title {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.products-item .products-title_link {
+    font-size: 16px;
+    color: #0558bc;
+    font-weight: 700;
+}
+.products-item .products-info {
+    padding-top: 4px;
+    font-size: 14px;
+    zoom: 1;
+}
+.products-item .products-type_item {
+    float: left;
+    width: 340px;
+    height: 36px;
+    overflow: hidden;
+    border-right: 1px solid #eee;
+    margin-right: 9px;
+}
+.products-item .products-type_item .icon-type1 {
+    background-position: -116px 0;
+}
+.products-type{
+    float: left;
+    width: 700px;
+}
+.products-type_item em{
+    color: #e2183a;
+    font-style: normal;
+}
+.products-btn{
+    background-color: #0558bc;
+}
+.agree-btn{
+    margin-left: 15px;
+    background-color: #e2183a;
+}
+
+
+.paginator {
+    margin: 20px auto auto 20px;
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+}
+.page-next, .page-no, .page-prev {
+    display: inline-block;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 13px;
+    height: 23px;
+    border: 1px solid #ccc;
+    color: #666;
+    text-align: center;
+    line-height: 23px;
+    vertical-align: middle;
+}
+.page-no.current {
+    color: #fff;
+    background-color: #d70c19;
+    border-color: #d70c19;
+}
+/* -----------------------企业详情-------------------------- */
+.detail-wrap{
+    zoom:1;
+    background-color: #f5f5f5;
+    padding: 2px;
+}
+.detail-wrap:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}
+/* .detail-company{
+    float:left;
+    width:250px;
+    padding:1px;
+    border:1px solid #ccc;
+    overflow:hidden
+} */
+.detail-info{
+    float: left;
+    width:95%;
+    margin: 5px;
+    background-color: #fff;
+    padding: 5px 0 0 2%;
+
+}
+/* .detail-company_img{
+    display:block;
+    width:100%
+}
+.detail-company_info{
+    padding:10px;
+    font-size:15px
+} */
+.card--detail{
+    margin-bottom:20px
+}
+.detail-bank{zoom:1}
+.detail-bank:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}
+.detail-bank .detail-bank_img{
+    float:left;
+    display:block;
+    height:54px;
+    margin-right:20px
+}
+.table-detal{
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0;
+    line-height:1.8;
+    font-size:15px
+}
+.table-detal td{
+    padding:3px 5px
+}
+.table-detal .table-th{
+    width:120px;
+    text-align:right
+}
+.detail-price,.table-detal em{
+    font-size:18px;
+    color:red;
+}
+.detail-price{
+    border-top:1px dashed #ccc;
+    margin-top:15px;
+    padding-top:15px;
+    text-align:right;
+    line-height:40px
+}
+.detail-price em{font-size:28px}
+.detail-price .return_btn{
+    display:inline-block;
+    height:40px;
+    width:100px;
+    margin-right:20px;
+    margin-left:20px;
+    text-align:center;
+    line-height:38px;
+    font-size:18px;
+    color:#fff;
+    border:1px solid #c90000;
+    background-color:#e21739;
+    border-radius:4px
+}
+.detail-price .detail-price_btn:hover{
+    color:#fff;
+    background-color:#c90000
+}
+
+/* --------------------------企业需求---------------------------- */
+/* .enterpriseNeed{
+    width:95%;
+
+} */
+.enterpriseNeed-head{
+    background: #85141a;
+    /* position: absolute; */
+    padding: 5px 10px; 
+    color: #fff;
+    
+}
+
+.enterpriseNeed-body{
+    width:90%;
+    background: #fff;
+    position: absolute;
+    
+    border-top: 3px solid #85141a;
+	/* left: 243px;
+	width: 1090px;
+	height: 595px;
+	top: 46px; */
+}
+.form2{
+    height: auto;
+    margin-top: 20px;
+    padding: 20px 0px;
+    border: solid 1px #E4E4E4;
+    /* background-color: #E4E4E4; */
+}
+.form2 button{
+    
+    margin-left: 45%;
+    margin-top: 20px;
+    text-align: center;
+}
+.enterpriseNeed-table{
+    border-top: 3px solid #85141a;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.enterpriseNeed-table thead{
+    background: -webkit-linear-gradient(#fff,#F4F3F3); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#fff,#F4F3F3); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#fff,#F4F3F3); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#fff,#F4F3F3); /* 标准的语法（必须放在最后） */
+}
