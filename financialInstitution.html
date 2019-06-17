@@ -12,6 +12,12 @@
   <link rel="stylesheet" type="text/css" href="css/financiallnstitution.css">
   <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
   <link rel="stylesheet" type="text/css" href="css/page.css">
+  <style type="text/css">
+    @media screen and (max-width:1000px){
+        body{width: 100%;}
+        #myTab{display: none;}
+    }
+</style>
 	
 </head>
 <body>
@@ -341,7 +347,17 @@
                 <div id="companyDetail" style="display: none">
                     <div class="container">
                         <!-- <div class="breadcrumb enterpriseNeed-head" style="width: 160px">企业申请 &gt;&gt;企业详情</div> -->
-                        <div class="breadcrumb" >企业申请 &gt;&gt;企业详情<div class="company-return"><a class="return_btn" href="#"><i class="iconfont icon-fanhui"></i></a></div></div>
+                        <div class="breadcrumb" >
+                            企业申请>企业详情
+                            <div class="myTabContent-user">
+                                <div class="exit" style="margin-top: -25px;"><i class="iconfont icon-tuichu1"></i></div>
+                                <div class="company-return" style="margin-top: -25px;"><a class="return_btn" href="#"><i class="iconfont icon-fanhui"></i></a></div>
+                                <div class="myTabContent-userName" style="margin-top: -20px;">欢迎您，<span class="fiUsername"></span>！</div>                        
+                            </div>
+                            <!-- <div class="company-return">
+                                <a class="return_btn" href="#"><i class="iconfont icon-fanhui"></i></a>
+                            </div> -->
+                        </div>
                         
                         <div class="detail-wrap">
                             <!-- <div class="detail-company">

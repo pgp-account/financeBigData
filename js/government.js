@@ -1,5 +1,5 @@
 $(document).ready(function(){    
-    var userName = window.localStorage.getItem("fiuserName");
+    var userName = window.localStorage.getItem("gousername");
     $(".goUsername").html(userName);
     //var enterpriseNamArr = new Array();
     //---------------获取未评级的企业名-----------------

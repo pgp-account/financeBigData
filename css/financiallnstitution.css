@@ -115,9 +115,9 @@ body{
     background-color: rgb(42,127,208);
 }
 .myTabContent-title{
-    padding: 4px 10px; 
+    padding: 5px 20px; 
     color: #fff;
-    width: 140px;
+    width: 200px;
     float: left;
     font-size: 17px;
 }
@@ -139,9 +139,9 @@ body{
     background-color: rgb(42,127,208);
 }
 .enterpriseApp-title{
-    padding: 4px 10px; 
+    padding: 5px 20px; 
     color: #fff;
-    width: 140px;
+    width: 200px;
     float: left;
 }
 .enterpriseApp-title a{
@@ -294,7 +294,7 @@ body{
     position: relative;
     height: 60px;
     width: 1135px;
-    padding-top: 10px;
+    padding-top: 15px;
     background-color: rgb(42,127,208);
     font-size: 17px;
     color: #fff;
@@ -413,9 +413,9 @@ body{
     color: #fff;
 }
 .enterpriseNeed-title{
-    padding: 4px 10px; 
+    padding: 5px 20px; 
     color: #fff;
-    width: 140px;
+    width: 200px;
     float: left;
 }
 .enterpriseNeed-title a{

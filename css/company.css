@@ -40,8 +40,9 @@ body{
     cursor: pointer;
 }
 
-.company-return span{
+.company-return a span{
 	font-size: 19px;
+	color: #fff;
 }
 
 

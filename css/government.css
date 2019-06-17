@@ -33,6 +33,7 @@ body{
     position:relative;
     display:block;
     padding:10px 0; 
+    width: 180px;
 }
 .nav li a > span{
 	padding-right: 7px;
@@ -114,9 +115,9 @@ body{
     background-color: rgb(42,127,208);
 }
 .myTabContent-title{
-    padding: 4px 10px; 
+    padding: 5px 20px; 
     color: #fff;
-    width: 200px;
+    width: 250px;
     float: left;
     font-size: 17px;
 }
@@ -146,9 +147,9 @@ body{
     color: #fff;
 }
 .enterpriseNeed-title{
-    padding: 4px 10px; 
+    padding: 5px 20px; 
     color: #fff;
-    width: 140px;
+    width: 200px;
     float: left;
 }
 .enterpriseNeed-title a{
