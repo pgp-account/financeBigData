@@ -48,6 +48,7 @@ $(document).ready(function(){
     //    ----------------------------------企业注册
     
     $("#co-regist").click(function(){
+        
         //alert($("#companycode").val().length);
         if($('#checkbox-id').is(':checked')){  
             if($("#companycode").val().length == 18){
@@ -109,7 +110,8 @@ $(document).ready(function(){
     //    ----------------------------------政府注册
     
     $("#go-regist").click(function(){
-        
+        var userName = $("#gousername").val();
+        window.localStorage.setItem("gousername", userName);
         if($('#checkbox-id').is(':checked')){            
             $.ajax({
             type : "POST",

@@ -123,6 +123,8 @@ $(document).ready(function(){
     });
   });
   $("#gologin-submit").click(function(){
+    var userName = $("#gousername").val();
+    window.localStorage.setItem("gousername", userName);
     $.ajax({
       type: "POST",
       url: 'http://120.78.209.65:8888/government/login',  

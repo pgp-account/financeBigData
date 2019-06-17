@@ -3,23 +3,74 @@ body{
 	padding: 0px;
 	height: 100%;
 	background: #F3F3F3;
+<<<<<<< HEAD
 }
 .exit{
 	background: #0248CD;
     color: #fff;
     width: 60px;
+=======
+	width: 1500px;
+	font-family:'Microsoft YaHei';
+}
+.exit{
+    background: #67A3DC;
+    color: #fff;
+    width: 33px;
+    height: 33px;
+    margin-top: 14px;
+    float: right;
+    margin-right: 3%;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+.exit span{
+	font-size: 19px;
+}
+
+.company-return{
+	background: #67A3DC;
+    color: #fff;
+    width: 33px;
+    height: 33px;
+    margin-top: 14px;
+    float: right;
+    margin-right: 6px;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+.company-return span{
+	font-size: 19px;
+>>>>>>> style first modification
 }
 
 
 /*导航栏*/
+<<<<<<< HEAD
 .col-md-2{
 	width: 229px;
 	padding: 0px;
 	height: 100vh;
+=======
+.company-sidebar{
+	width: 215px;
+	padding: 0px;
+	height: 100vh;
+	margin-left: 42px;
+>>>>>>> style first modification
 }
 
 .nav li{
 	border-bottom: 1px solid #E1E1E1;
+<<<<<<< HEAD
 }
 
 .nav li:nth-child(1){
@@ -45,6 +96,44 @@ img{
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
 	color: #E1243F;
 	background: #F3F3F3;
+=======
+	height: 61px;
+}
+
+/* .company-nav>li>a{
+	padding: 16px 22px;
+} */
+
+.nav li:nth-child(1){
+	background: #2980D1;
+}
+
+.company-nav{
+	background: #fff;
+}
+
+.nav>li>a{
+	position:relative;
+	display:block;
+	padding:16px 22px
+   } 
+.nav li a{
+	color: #555555;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.nav li a > span{
+	padding-right: 7px;
+    font-size: 17px;
+}
+.active{
+	color:#2796ff;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	color:#2796ff;
+	background: #FFF;
+>>>>>>> style first modification
 }
 
 
@@ -62,7 +151,11 @@ img{
 }
 
 form{
+<<<<<<< HEAD
 	margin-top: 8px;
+=======
+	margin-top: 12px;
+>>>>>>> style first modification
 }
 
 input:-webkit-autofill { 
@@ -81,6 +174,7 @@ form .form-group{
 }
 
 hr{
+<<<<<<< HEAD
 	margin-top: 9px;
 	margin-bottom: 9px;
 }
@@ -93,12 +187,28 @@ hr{
     color: #fff;
     outline:none;
 }
+=======
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+.btu-group button{
+    background: #3B8EF0;
+    color: #fff;
+    width: 91px;
+}
+
+>>>>>>> style first modification
 .form-control{
 	border-radius: 0px;
 }
 
 .btu-group{
+<<<<<<< HEAD
 	margin-top: 5px;
+=======
+	margin-top: 20px;
+>>>>>>> style first modification
     text-align: center;
 }
 
@@ -116,8 +226,13 @@ textarea.form-control{
 .post-demand-body{
 	background: #fff;
 	position: absolute;
+<<<<<<< HEAD
 	left: 243px;
 	/* top: 62px; */
+=======
+	left: 285px;
+	top: 62px; 
+>>>>>>> style first modification
 	width: 1090px;
 	height: 595px;
 }
@@ -133,10 +248,17 @@ textarea.form-control{
 .mydemand-body{
 	background: #fff;
 	position: absolute;
+<<<<<<< HEAD
 	left: 243px;
 	width: 1090px;
 	height: 595px;
 	top: 46px;
+=======
+	left: 285px;
+	width: 1090px;
+	height: 595px;
+	top: 62px;
+>>>>>>> style first modification
 }
 
 .mydemand-line{
@@ -149,6 +271,7 @@ textarea.form-control{
 }
 
 .mydemand-head{
+<<<<<<< HEAD
     background: #0248CD;
     position: absolute;
     left: 243px;
@@ -159,6 +282,18 @@ textarea.form-control{
     padding-left: 10px;
     color: #fff;
     line-height: 30px;
+=======
+    background: #2980D1;
+    position: absolute;
+    left: 285px;
+    height: 61px;
+    width: 1090px;
+    font-size: 17px;
+    padding-left: 23px;
+    color: #fff;
+    line-height: 61px;
+    letter-spacing: 0.7px;
+>>>>>>> style first modification
 }
 
 .mydemand-form{
@@ -210,10 +345,17 @@ textarea.form-control{
 .products-body{
 	background: #fff;
 	position: absolute;
+<<<<<<< HEAD
 	left: 243px;
 	width: 1090px;
 	height: 595px;
 	top: 46px;
+=======
+	left: 285px;
+	width: 1090px;
+	height: 595px;
+	top: 62px;
+>>>>>>> style first modification
 	overflow:auto;
 }
 
@@ -367,10 +509,17 @@ textarea.form-control{
 .message-body{
 	background: #fff;
 	position: absolute;
+<<<<<<< HEAD
 	left: 243px;
 	width: 1090px;
 	height: 585px;
 	top: 50px;
+=======
+	left: 285px;
+	width: 1090px;
+	height: 585px;
+	top: 62px;
+>>>>>>> style first modification
 	overflow: auto;
 }
 
@@ -406,10 +555,17 @@ textarea.form-control{
 .product-details-body{
 	background: #fff;
 	position: absolute;
+<<<<<<< HEAD
 	left: 243px;
 	width: 1090px;
 	height: 595px;
 	top: 46px;
+=======
+	left: 285px;
+	width: 1090px;
+	height: 595px;
+	top: 62px;
+>>>>>>> style first modification
 }
 
 .product-details-body > div:nth-child(4){
@@ -460,10 +616,17 @@ textarea.form-control{
 .change-password-body{
 	background: #fff;
 	position: absolute;
+<<<<<<< HEAD
 	left: 243px;
 	width: 1090px;
 	height: 595px;
 	top: 46px;
+=======
+	left: 285px;
+	width: 1090px;
+	height: 595px;
+	top: 62px;
+>>>>>>> style first modification
 }
 
 .change-password-body form{

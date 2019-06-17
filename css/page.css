@@ -133,11 +133,19 @@
 	line-height:30px
 }
 
+<<<<<<< HEAD
 .btn-muted.current{
 	border-color:#d70c19;
 	color:#fff;
 	background-color:#d70c19
 }
+=======
+/* .btn-muted.current{
+	border-color:#d70c19;
+	color:#fff;
+	background-color:#d70c19
+} */
+>>>>>>> style first modification
 
 .detail-wrap{zoom:1}
 
@@ -157,7 +165,11 @@
 	overflow:hidden;
 }
 
+<<<<<<< HEAD
 .detail-info{float:right;width:830px}
+=======
+/* .detail-info{float:right;width:830px} */
+>>>>>>> style first modification
 
 .detail-company_img{display:block;width:100%}
 .detail-company_info{padding:10px;font-size:15px}

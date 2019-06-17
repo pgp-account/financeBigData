@@ -1,4 +1,6 @@
 $(document).ready(function(){    
+    var userName = window.localStorage.getItem("fiuserName");
+    $(".goUsername").html(userName);
     //var enterpriseNamArr = new Array();
     //---------------获取未评级的企业名-----------------
     $("#ENameReq").click(function(){

@@ -9,8 +9,8 @@
 	<meta name="keywords" content="西咸新区沣东金融综合服务平台">
 	<meta name="description" content="西咸新区沣东金融综合服务平台">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/financiallnstitution.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/government.css">
+  <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
   <link rel="stylesheet" type="text/css" href="css/page.css">
 	
 </head>
@@ -19,32 +19,36 @@
     <div class="row clearfix">
       <!-- <div class="col-md-12 column"> -->
         <div id="myTab" class="col-md-2">
-          <img style="width:100%;height:100%" src="images/h1.png">
+            <div id="myTab-title"><i class="iconfont icon-zhengfufeiyinglijigou"></i>&nbsp;&nbsp;政府部门</div>
           <ul class="nav nav-list accordion-group nav-pills nav-stacked">
               <li class="active" >
                   <a href="#project" data-toggle="tab">
-                      <span class="glyphicon glyphicon-play"></span>
-                      政策发布
+                        <i class="iconfont icon-fabuxuqiu"></i>&nbsp;&nbsp;政策发布
+                      
                   </a>
               </li>
-              <li><a id="ENameReq" href="#creditRating" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>企业信用等级发布</a></li>
+              <li><a id="ENameReq" href="#creditRating" data-toggle="tab" ><i class="iconfont icon-xinyong-"></i>&nbsp;&nbsp;企业信用等级发布</a></li>
               <!-- <li><a  href="#enterpriseNeed" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>金融机构信息发布</a></li> -->
-              <li><a href="#ejb" data-toggle="tab" ><span class="glyphicon glyphicon-play"></span>新闻发布</a></li>
+              <li><a href="#ejb" data-toggle="tab" ><i class="iconfont icon-xinwen_o"></i>&nbsp;&nbsp;新闻发布</a></li>
           </ul>
         </div>
         <!------------------------------------- 政策发布-------------------------------------- -->
         <div id="myTabContent" class="tab-content col-md-10" >
             <div class="tab-pane fade in active" id="project">
-                <div style="position: relative;height: 50px;padding-top: 10px;">
-                    <div class="enterpriseNeed-head" style=" width: 140px;float: left;">
-                        <a href="go-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;政策发布
+                <div class="myTabContent-head" >
+                    <div class="myTabContent-title" >
+                        <a href="go-index.html"><span>首页</span></a>>政策发布
                     </div>
-                    <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                    <div class="myTabContent-user">
+                        <div class="exit"><i class="iconfont icon-tuichu1"></i></div>
+						<div class="company-return"><a href="fi-index.html"><i class="iconfont icon-fanhui"></i></a></div>
+						<div class="myTabContent-userName">欢迎您，<span class="goUsername"></span>！</div>                        
+                    </div> 
                 </div> 
                 <!-- <div class="enterpriseNeed-head" style="margin: 15px 0; width: 140px;">
                         <span style="font-weight: bold;">首页</span>&nbsp;&nbsp;>&nbsp;&nbsp;政策发布
                 </div> -->
-                <form class="form-horizontal" role="form" style="padding-top: 20px;border-top: 2px solid #85141a;">
+                <form class="form-horizontal" role="form">
                     <div class="form-group" style="margin-left:15%">
                         <label class=" control-label tit">政策名称：</label>
                         <div >
@@ -88,11 +92,15 @@
 
             <!-- ---------------------企业信用等级发布--------------------------- -->
             <div class="tab-pane fade" id="creditRating">
-                <div style="position: relative;height: 30px;padding-top: 10px;">
-                    <div class="enterpriseNeed-head" style=" width: 200px;float: left;">
-                        <a href="go-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;企业信用等级发布
+                <div class="myTabContent-head" >
+                    <div class="myTabContent-title" >
+                        <a href="go-index.html"><span>首页</span></a>>企业信用等级发布
                     </div>
-                    <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                    <div class="myTabContent-user">
+                        <div class="exit"><i class="iconfont icon-tuichu1"></i></div>
+                        <div class="company-return"><a href="fi-index.html"><i class="iconfont icon-fanhui"></i></a></div>
+                        <div class="myTabContent-userName">欢迎您，<span class="goUsername"></span>！</div>                        
+                    </div> 
                 </div>
                 <!-- <div class="enterpriseNeed-head" style="margin: 15px 0; width: 200px;">
                     <span style="font-weight: bold;">首页</span>&nbsp;&nbsp;>&nbsp;&nbsp;企业信用等级发布
@@ -145,17 +153,21 @@
             </div> -->
             <!----------------------------------- 新闻发布----------------------------------- -->
             <div class="tab-pane fade" id="ejb">
-                <div style="position: relative;height: 50px;padding-top: 10px;">
-                    <div class="enterpriseNeed-head" style=" width: 200px;float: left;">
-                        <a href="go-index.html" style="color: #FFF"><span style="font-weight: bold;">首页</span></a>&nbsp;&nbsp;>&nbsp;&nbsp;新闻发布
+                <div class="myTabContent-head" >
+                    <div class="myTabContent-title" >
+                        <a href="go-index.html"><span>首页</span></a>>新闻发布
                     </div>
-                    <button type="button" class="btn btn-default exit" style="float: right;margin-right: 30px;">退出</button>
+                    <div class="myTabContent-user">
+                        <div class="exit"><i class="iconfont icon-tuichu1"></i></div>
+						<div class="company-return"><a href="fi-index.html"><i class="iconfont icon-fanhui"></i></a></div>
+						<div class="myTabContent-userName">欢迎您，<span class="goUsername"></span>！</div>                        
+                    </div> 
                 </div>
                 <!-- <div class="enterpriseNeed-head" style="margin: 15px 0; width: 140px;">
                     <span style="font-weight: bold;">首页</span>&nbsp;&nbsp;>&nbsp;&nbsp;新闻发布
                 </div> -->
                 
-                <form class="form-horizontal" role="form" style="padding-top: 20px;border-top: 2px solid #85141a;">
+                <form class="form-horizontal" role="form" >
                     <div class="form-group" style="margin-left:15%">
                         <label class=" control-label tit">新闻名称：</label>
                         <div >

@@ -1,6 +1,7 @@
 $(document).ready(function(){
     
     var userName = window.localStorage.getItem("fiuserName");
+    $(".fiUsername").html(userName);
     $.ajax({
         type : "POST",
         url:"http://120.78.209.65:8888/bank/login/"+userName,
@@ -82,15 +83,15 @@ $(document).ready(function(){
             data:{
                 bankName:bankName
             },
-            timeout:15000, 
             // 请求发送之前（发送请求前可修改XMLHttpRequest对象的函数，如添加自定义HTTP头。）。
-            beforeSend:function(XMLHttpRequest){
-                $("#doing").html("正在加载，请稍后···"); 
-            }, 
+            // beforeSend:function(XMLHttpRequest){
+            //     $("#loading").html("<img src='https://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E5%8A%A0%E8%BD%BD%E4%B8%AD&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=1992466295,1145446755&os=4150192825,3836185010&simid=0,0&pn=0&rn=1&di=8250&ln=626&fr=&fmq=1560692862295_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&hs=2&objurl=http%3A%2F%2Fphotocdn.sohu.com%2F20160127%2Fmp56791937_1453886827459_16.gif&rpstart=0&rpnum=0&adpicid=0&force=undefined' />"); 
+            // }, 
             success:function(result){
                 if(result.data == null){
                     alert("无结果！")
                 }else{
+                    // $("#loading").empty();
                     for(var i= 0;i<result.data.length;i++){
                         var ProductName = result.data[i].fkProductName;
                         if($.inArray(ProductName,productArray) < 0){
@@ -108,17 +109,17 @@ $(document).ready(function(){
                         $(".products-list").append(productsItem);
 
                     }
-                    // alert(productArray);
+                    
                 }
+                
             },
             // 请求完成后的回调函数 (请求成功或失败之后均调用)
             complete:function(XMLHttpRequest,textStatus){
-
-                $("#doing").empty(); 
+                $("#loading").empty();
             }, 
             // 请求失败时调用此函数。
             error:function(XMLHttpRequest,textStatus,errorThrown){
-                $("#doing").empty(); 
+                $("#loading").empty();
                 alert("错误");
             } 
         });       

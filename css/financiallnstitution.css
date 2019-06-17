@@ -1,30 +1,49 @@
-
+body{
+    background-color: #f6f6f6;
+    padding:0 40px;
+}
 .form-group span{
     color: red;
 }
 .btn{
-    background-color: #85141a;
+    background-color: rgb(42,127,208);
     color: #fff;
-    
 }
 .tab-pane{
     margin-right: 5%;
 }
 
+#myTab-title{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    font-size: 17px;
+    background: rgb(42,127,208);
+    padding: 20px 40px 0 ;
+}
 
 
+.nav li{
+    background-color: #fff;
+    padding: 10px 25px 0 ;
+    font-size: 17px;
+    height: 60px;
+}
 .nav li a{
-	color: #064ec0;
+    color: #000;
+    position:relative;
+    display:block;
+    padding:10px 15px
 }
 .nav li a > span{
 	padding-right: 7px;
     font-size: 13px;
-    color: #064ec0;
+    color: rgb(42,127,208);
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-	color: #FFF;
-	background: #064ec0;
+	color: rgb(42,127,208);
+	/* background: rgb(42,127,208); */
 }
 .btn-group{
 	margin-top: 5px;
@@ -38,13 +57,100 @@
     color: #fff;
 }
 
+.exit{
+    background: #67A3DC;
+    color: #fff;
+    width: 33px;
+    height: 33px;
+    /* margin-top: 5px; */
+    float: right;
+    margin-right: 3%;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
 
+.exit a i{
+    font-size: 19px;
+    color: #fff
+}
+
+.company-return{
+	background: #67A3DC;
+    color: #fff;
+    width: 33px;
+    height: 33px;
+    /* margin-top: 5px; */
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+.company-return a i{
+    font-size: 19px;
+    color: #fff
+}
+.myTabContent-userName{
+    float: right;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+
+/* --------------------产品发布--------------------------------- */
+#project{
+    background-color: #fff;
+}
+.myTabContent-head{
+    position: relative;
+    height: 60px;
+    padding-top: 10px;
+    background-color: rgb(42,127,208);
+}
+.myTabContent-title{
+    padding: 4px 10px; 
+    color: #fff;
+    width: 140px;
+    float: left;
+    font-size: 17px;
+}
+.myTabContent-title a{
+    color: #fff;
+    font-size: 17px;
+}
 
 
 /* --------------------企业申请--------------------------------- */
+.enterpriseApp{
+    background-color: #fff;
+}
+.enterpriseApp-head{
+    position: relative;
+    height: 60px;
+    padding-top: 10px;
+    font-size: 17px;
+    background-color: rgb(42,127,208);
+}
+.enterpriseApp-title{
+    padding: 4px 10px; 
+    color: #fff;
+    width: 140px;
+    float: left;
+}
+.enterpriseApp-title a{
+    font-size: 17px;
+    color: #fff;
+}
 .table-default{
-    margin-top: 10px;
-    width:100%;
+    margin:0 10px;
+    width:95%;
     border-collapse:collapse;
     border-spacing:0;
     line-height:1.8;
@@ -62,6 +168,11 @@
     border: 1px solid #ccc;
     padding: 5px;
 } 
+.btn-muted.current {
+    border-color:  rgb(42,127,208);
+    color: #fff;
+    background-color:  rgb(42,127,208);
+}
 .card-body{
     padding: 15px;
     border-top: 1px dashed #ccc;
@@ -146,7 +257,7 @@
     font-style: normal;
 }
 .products-btn{
-    background-color: #0558bc;
+    background-color: rgb(42,127,208);
 }
 .agree-btn{
     margin-left: 15px;
@@ -175,10 +286,21 @@
 }
 .page-no.current {
     color: #fff;
-    background-color: #d70c19;
-    border-color: #d70c19;
+    background-color: rgb(42,127,208);
+    border-color: rgb(42,127,208);
 }
 /* -----------------------企业详情-------------------------- */
+.breadcrumb{
+    position: relative;
+    height: 60px;
+    width: 1135px;
+    padding-top: 10px;
+    background-color: rgb(42,127,208);
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: -20px;
+    margin-left: 7px;
+}
 .detail-wrap{
     zoom:1;
     background-color: #f5f5f5;
@@ -198,9 +320,10 @@
     border:1px solid #ccc;
     overflow:hidden
 } */
+
 .detail-info{
     float: left;
-    width:95%;
+    width:100%;
     margin: 5px;
     background-color: #fff;
     padding: 5px 0 0 2%;
@@ -267,8 +390,8 @@
     line-height:38px;
     font-size:18px;
     color:#fff;
-    border:1px solid #c90000;
-    background-color:#e21739;
+    border:1px solid rgb(42,127,208);
+    background-color:rgb(42,127,208);
     border-radius:4px
 }
 .detail-price .detail-price_btn:hover{
@@ -277,24 +400,33 @@
 }
 
 /* --------------------------企业需求---------------------------- */
-/* .enterpriseNeed{
-    width:95%;
+/* #enterpriseNeed{
+    margin-top: 20px;
 
 } */
 .enterpriseNeed-head{
-    background: #85141a;
-    /* position: absolute; */
-    padding: 5px 10px; 
+    position: relative;
+    height: 60px;
+    padding-top: 10px;
+    background-color: rgb(42,127,208);
+    font-size: 17px;
     color: #fff;
-    
+}
+.enterpriseNeed-title{
+    padding: 4px 10px; 
+    color: #fff;
+    width: 140px;
+    float: left;
+}
+.enterpriseNeed-title a{
+    font-size: 17px;
+    color: #fff;
 }
 
 .enterpriseNeed-body{
-    width:90%;
+    width:92.7%;
     background: #fff;
     position: absolute;
-    
-    border-top: 3px solid #85141a;
 	/* left: 243px;
 	width: 1090px;
 	height: 595px;
@@ -314,7 +446,7 @@
     text-align: center;
 }
 .enterpriseNeed-table{
-    border-top: 3px solid #85141a;
+    border-top: 3px solid rgb(42,127,208);
     margin-top: 20px;
     padding-top: 20px;
 }

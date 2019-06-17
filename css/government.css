@@ -1,0 +1,191 @@
+body{
+    background-color: #f6f6f6;
+    padding:0 40px;
+}
+
+.btn{
+    background-color: rgb(42,127,208);
+    color: #fff;
+    
+}
+.tab-pane{
+    margin-right: 5%;
+}
+
+#myTab-title{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    font-size: 17px;
+    background: rgb(42,127,208);
+    padding: 20px 0 0 25px;
+}
+
+
+.nav li{
+    background-color: #fff;
+    padding: 10px 25px 0 ;
+    font-size: 17px;
+    height: 60px;
+}
+.nav li a{
+    color: #000;
+    position:relative;
+    display:block;
+    padding:10px 0; 
+}
+.nav li a > span{
+	padding-right: 7px;
+    font-size: 13px;
+    color: rgb(42,127,208);
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	color: rgb(42,127,208);
+	/* background: rgb(42,127,208); */
+}
+.btn-group{
+	margin-top: 5px;
+    margin-left: 28%;
+}
+.btn-group button{
+	width: 92px;
+    margin-right: 40px;
+    height: 30px;
+    
+    color: #fff;
+}
+
+.exit{
+    background: #67A3DC;
+    color: #fff;
+    width: 33px;
+    height: 33px;
+    /* margin-top: 5px; */
+    float: right;
+    margin-right: 3%;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+.exit a i{
+    font-size: 19px;
+    color: #fff
+}
+
+.company-return{
+	background: #67A3DC;
+    color: #fff;
+    width: 33px;
+    height: 33px;
+    /* margin-top: 5px; */
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+.company-return a i{
+    font-size: 19px;
+    color: #fff
+}
+.myTabContent-userName{
+    float: right;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+
+/* --------------------政策发布--------------------------------- */
+#project{
+    background-color: #fff;
+}
+.myTabContent-head{
+    position: relative;
+    height: 60px;
+    padding-top: 10px;
+    background-color: rgb(42,127,208);
+}
+.myTabContent-title{
+    padding: 4px 10px; 
+    color: #fff;
+    width: 200px;
+    float: left;
+    font-size: 17px;
+}
+.myTabContent-title a{
+    color: #fff;
+    font-size: 17px;
+}
+.form-horizontal{
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+
+
+
+/* --------------------------企业需求---------------------------- */
+/* #enterpriseNeed{
+    margin-top: 20px;
+
+} */
+.enterpriseNeed-head{
+    position: relative;
+    height: 60px;
+    padding-top: 10px;
+    background-color: rgb(42,127,208);
+    font-size: 17px;
+    color: #fff;
+}
+.enterpriseNeed-title{
+    padding: 4px 10px; 
+    color: #fff;
+    width: 140px;
+    float: left;
+}
+.enterpriseNeed-title a{
+    font-size: 17px;
+    color: #fff;
+}
+
+.enterpriseNeed-body{
+    width:92.7%;
+    background: #fff;
+    position: absolute;
+	/* left: 243px;
+	width: 1090px;
+	height: 595px;
+	top: 46px; */
+}
+.form2{
+    height: auto;
+    margin-top: 20px;
+    padding: 20px 0px;
+    border: solid 1px #E4E4E4;
+    /* background-color: #E4E4E4; */
+}
+.form2 button{
+    
+    margin-left: 45%;
+    margin-top: 20px;
+    text-align: center;
+}
+.enterpriseNeed-table{
+    /* margin-top: 20px;
+    padding-top: 20px; */
+    background-color: #fff;
+}
+.enterpriseNeed-table thead{
+    background: -webkit-linear-gradient(#fff,#F4F3F3); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#fff,#F4F3F3); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#fff,#F4F3F3); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#fff,#F4F3F3); /* 标准的语法（必须放在最后） */
+}
