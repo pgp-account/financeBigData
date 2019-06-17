@@ -3,13 +3,6 @@ body{
 	padding: 0px;
 	height: 100%;
 	background: #F3F3F3;
-<<<<<<< HEAD
-}
-.exit{
-	background: #0248CD;
-    color: #fff;
-    width: 60px;
-=======
 	width: 1500px;
 	font-family:'Microsoft YaHei';
 }
@@ -49,54 +42,19 @@ body{
 
 .company-return span{
 	font-size: 19px;
->>>>>>> style first modification
 }
 
 
 /*导航栏*/
-<<<<<<< HEAD
-.col-md-2{
-	width: 229px;
-	padding: 0px;
-	height: 100vh;
-=======
 .company-sidebar{
 	width: 215px;
 	padding: 0px;
 	height: 100vh;
 	margin-left: 42px;
->>>>>>> style first modification
 }
 
 .nav li{
 	border-bottom: 1px solid #E1E1E1;
-<<<<<<< HEAD
-}
-
-.nav li:nth-child(1){
-	border-top: 1px solid #E1E1E1;
-}
-
-img{
-	width: 100%;
-}
-
-.nav li a{
-	color: #646B7A;
-}
-.nav li a > span{
-	padding-right: 7px;
-    font-size: 13px;
-    color: #E1243F;
-}
-.active{
-	color: #E1243F;
-}
-
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-	color: #E1243F;
-	background: #F3F3F3;
-=======
 	height: 61px;
 }
 
@@ -133,7 +91,6 @@ img{
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
 	color:#2796ff;
 	background: #FFF;
->>>>>>> style first modification
 }
 
 
@@ -151,11 +108,7 @@ img{
 }
 
 form{
-<<<<<<< HEAD
-	margin-top: 8px;
-=======
 	margin-top: 12px;
->>>>>>> style first modification
 }
 
 input:-webkit-autofill { 
@@ -174,20 +127,6 @@ form .form-group{
 }
 
 hr{
-<<<<<<< HEAD
-	margin-top: 9px;
-	margin-bottom: 9px;
-}
-
-.btu-group button{
-	width: 92px;
-    margin-right: 40px;
-    height: 30px;
-    background: #DC3A3F;
-    color: #fff;
-    outline:none;
-}
-=======
 	margin-top: 13px;
 	margin-bottom: 13px;
 }
@@ -198,17 +137,12 @@ hr{
     width: 91px;
 }
 
->>>>>>> style first modification
 .form-control{
 	border-radius: 0px;
 }
 
 .btu-group{
-<<<<<<< HEAD
-	margin-top: 5px;
-=======
 	margin-top: 20px;
->>>>>>> style first modification
     text-align: center;
 }
 
@@ -226,13 +160,8 @@ textarea.form-control{
 .post-demand-body{
 	background: #fff;
 	position: absolute;
-<<<<<<< HEAD
-	left: 243px;
-	/* top: 62px; */
-=======
 	left: 285px;
 	top: 62px; 
->>>>>>> style first modification
 	width: 1090px;
 	height: 595px;
 }
@@ -248,17 +177,10 @@ textarea.form-control{
 .mydemand-body{
 	background: #fff;
 	position: absolute;
-<<<<<<< HEAD
-	left: 243px;
-	width: 1090px;
-	height: 595px;
-	top: 46px;
-=======
 	left: 285px;
 	width: 1090px;
 	height: 595px;
 	top: 62px;
->>>>>>> style first modification
 }
 
 .mydemand-line{
@@ -271,18 +193,6 @@ textarea.form-control{
 }
 
 .mydemand-head{
-<<<<<<< HEAD
-    background: #0248CD;
-    position: absolute;
-    left: 243px;
-    top: 10px;
-    height: 30px;
-    width: 165px;
-    font-size: 15px;
-    padding-left: 10px;
-    color: #fff;
-    line-height: 30px;
-=======
     background: #2980D1;
     position: absolute;
     left: 285px;
@@ -293,7 +203,6 @@ textarea.form-control{
     color: #fff;
     line-height: 61px;
     letter-spacing: 0.7px;
->>>>>>> style first modification
 }
 
 .mydemand-form{
@@ -345,17 +254,10 @@ textarea.form-control{
 .products-body{
 	background: #fff;
 	position: absolute;
-<<<<<<< HEAD
-	left: 243px;
-	width: 1090px;
-	height: 595px;
-	top: 46px;
-=======
 	left: 285px;
 	width: 1090px;
 	height: 595px;
 	top: 62px;
->>>>>>> style first modification
 	overflow:auto;
 }
 
@@ -509,17 +411,10 @@ textarea.form-control{
 .message-body{
 	background: #fff;
 	position: absolute;
-<<<<<<< HEAD
-	left: 243px;
-	width: 1090px;
-	height: 585px;
-	top: 50px;
-=======
 	left: 285px;
 	width: 1090px;
 	height: 585px;
 	top: 62px;
->>>>>>> style first modification
 	overflow: auto;
 }
 
@@ -555,17 +450,10 @@ textarea.form-control{
 .product-details-body{
 	background: #fff;
 	position: absolute;
-<<<<<<< HEAD
-	left: 243px;
-	width: 1090px;
-	height: 595px;
-	top: 46px;
-=======
 	left: 285px;
 	width: 1090px;
 	height: 595px;
 	top: 62px;
->>>>>>> style first modification
 }
 
 .product-details-body > div:nth-child(4){
@@ -616,17 +504,10 @@ textarea.form-control{
 .change-password-body{
 	background: #fff;
 	position: absolute;
-<<<<<<< HEAD
-	left: 243px;
-	width: 1090px;
-	height: 595px;
-	top: 46px;
-=======
 	left: 285px;
 	width: 1090px;
 	height: 595px;
 	top: 62px;
->>>>>>> style first modification
 }
 
 .change-password-body form{
