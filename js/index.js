@@ -64,7 +64,11 @@ $(document).ready(function(){
   });
 
 
-  
+  $("#password").keydown(function (event) {
+    if (event.keyCode == 13) {
+      $("#login-submit").click();
+    }
+  });
   $("#login-submit").click(function(){
     var comUsername=$("#username").val();
     $.ajax({
@@ -87,6 +91,12 @@ $(document).ready(function(){
         alert("网络错误");
       }
     });
+  });
+
+  $("#fipassword").keydown(function (event) {
+    if (event.keyCode == 13) {
+      $("#filogin-submit").click();
+    }
   });
   $("#filogin-submit").click(function(){
     if(!window.localStorage){
@@ -121,6 +131,12 @@ $(document).ready(function(){
         alert("网络错误");
       }
     });
+  });
+
+  $("#gopassword").keydown(function (event) {
+    if (event.keyCode == 13) {
+      $("#gologin-submit").click();
+    }
   });
   $("#gologin-submit").click(function(){
     var userName = $("#gousername").val();

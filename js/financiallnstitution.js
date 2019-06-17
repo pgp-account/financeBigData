@@ -72,7 +72,7 @@ $(document).ready(function(){
     //-----------------企业申请--------------------------------
     var productArray = new Array();
     $("#productApply").click(function(){   
-          
+        var bankName = window.localStorage.getItem("bankName");
         //alert(bankName); 
         $(".products-list").html("");
         $(".btn-muted").eq(0).siblings().removeClass("current");
